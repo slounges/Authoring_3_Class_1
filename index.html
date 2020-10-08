@@ -1,24 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Working with SASS</title>
+    <title>Working with SASS and Modules</title>
+
+    <!-- this has to be a css file -->
+    <link rel="stylesheet" href="css/master.css">
+
 </head>
+
 <body>
     <main id="app">
         <h1 class="hidden">Welcome to my awesome app</h1>
 
+        <!-- this is an HTML component -->
         <nav class="main-nav">
-            <li><a href="" class="list-item">list 1</a></li>
-            <li><a href="" class="list-item">list 2</a></li>
-            <li><a href="" class="list-item">list 3</a></li>
-            <li><a href="" class="list-item">list 4</a></li>
-        </nav>
+            
+            <li class="nav-item"><a href="#" class="nav-item">item 1</a></li>
 
-        <footer>
-            <p>this is my footer</p>
-        </footer>
+            <li class="nav-item"><a href="#" class="nav-item">item 2</a></li>
+            <li class="nav-item"><a href="#" class="nav-item">item 3</a></li>
+            <li class="nav-item"><a href="#" class="nav-item">item 4</a></li>
+            <li class="nav-item"><a href="#" class="nav-item">item 5</a></li>
+        </nav>
+        <!-- end component -->
+
+        <!-- add a users section here -->
+        <section class="user-section"></section>
+        <!-- end a users section-->
     </main>
+
+    <footer>this is a simple footer</footer>
+
+    <!--templates go here-->
+    <template id="profs-template">
+        <div class="user">
+            <h1 class="hidden"></h1>
+            <h2 class="user-name"></h2>
+            <p class="user-nickname"></p>
+            <p class="user-role"></p>          
+        </div>
+    </template>
+
+    <!--end templates-->
+    <!-- script files always go here -->
+    <script type="module" src="js/main.js"></script>
 </body>
+
 </html>
