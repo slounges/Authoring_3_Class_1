@@ -1,4 +1,23 @@
-$main-bgcolor: pink;
-$main-font: 'arial', 'helvetica', 'sans-serif';
+body {
+    font: $main-font;
+    font-size: $main-font-size;
 
-$font-size: 16px;
+    background-color: $main-bg-color;
+
+    margin: 0; 
+    border: 0;
+}
+
+.box {
+    width: 30px;
+    height: 30px;
+
+    @include roundCorners(20px);
+}
+
+.box2 {
+   width: 30px;
+    height: 30px;
+
+    @include roundCorners(20px);
+}
