@@ -7,12 +7,13 @@ nav {
         background-color: blue;
 
         @include roundCorners(8px);
-        @include addPadding(5px 12px);
+        @include addPadding(5px 10px);
 
-        a { cursor: pointer; text-decoration: none; }
+        a { 
+            cursor: pointer; text-decoration: none; color: white;
+
+            &:hover { color: red; }
+        }
     }
 
-    :hover {
-        a { color: white; }
-    }
 }

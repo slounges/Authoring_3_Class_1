@@ -1,31 +1,25 @@
-export default  {
-    Justin:{
+export default {
+    Justin: {
         name: "Justin",
         role: "Coordinator",
         nickname: "i don't know"
     },
 
-    John:{
+    John: {
         name: "John",
         role: "super chill prof",
         nickname: "just john"
     },
 
-    Joe:{
+    Joe: {
         name: "Joe",
-        role: "prof",
+        role: "Prof",
         nickname: "Teddy Bear"
     },
 
-    Pan:{
+    Pan: {
         name: "Pan",
         role: "Code Ninja",
         nickname: "Spider Pan"
-    },
-
-    Jarrod:{
-        name: "Jarrod",
-        role: "Male Model Prof",
-        nickname: "Zoolander"
-    },
+    }    
 }

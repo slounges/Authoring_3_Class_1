@@ -1,3 +1,7 @@
+// main rules go here
+
+// another generic comment
+
 body {
     font: $main-font;
     font-size: $main-font-size;
@@ -15,9 +19,9 @@ body {
     @include roundCorners(20px);
 }
 
-.box2 {
-   width: 30px;
+.box2 { 
+    width: 30px;
     height: 30px;
 
-    @include roundCorners(20px);
+    @include roundCorners(50%);
 }

@@ -8,7 +8,6 @@
 
     <!-- this has to be a css file -->
     <link rel="stylesheet" href="css/master.css">
-
 </head>
 
 <body>
@@ -17,34 +16,37 @@
 
         <!-- this is an HTML component -->
         <nav class="main-nav">
-            
-            <li class="nav-item"><a href="#" class="nav-item">item 1</a></li>
+            <li class="nav-item">
+                <a href="#" >item 1</a>
+            </li>
 
-            <li class="nav-item"><a href="#" class="nav-item">item 2</a></li>
-            <li class="nav-item"><a href="#" class="nav-item">item 3</a></li>
-            <li class="nav-item"><a href="#" class="nav-item">item 4</a></li>
-            <li class="nav-item"><a href="#" class="nav-item">item 5</a></li>
+            <li class="nav-item"><a href="#">item 2</a></li>
+            <li class="nav-item"><a href="#">item 3</a></li>
+            <li class="nav-item"><a href="#">item 4</a></li>
+            <li class="nav-item"><a href="#">item 5</a></li>
         </nav>
         <!-- end component -->
 
         <!-- add a users section here -->
-        <section class="user-section"></section>
-        <!-- end a users section-->
+        <section class="user-section">
+                <!-- user-template copies get rendered here -->
+        </section>
+        <!-- end users section -->
     </main>
 
     <footer>this is a simple footer</footer>
 
-    <!--templates go here-->
-    <template id="profs-template">
+    <!-- template files here (these don't render - the contents are reusable and get cloned at runtime) -->
+    <template id="user-template">
         <div class="user">
             <h1 class="hidden"></h1>
             <h2 class="user-name"></h2>
             <p class="user-nickname"></p>
-            <p class="user-role"></p>          
+            <p class="user-role"></p>
         </div>
     </template>
+    <!-- end templates -->
 
-    <!--end templates-->
     <!-- script files always go here -->
     <script type="module" src="js/main.js"></script>
 </body>

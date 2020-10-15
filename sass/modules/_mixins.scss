@@ -3,7 +3,7 @@
 }
 
 @mixin addPadding($values...) {
-  @each $var in $values{
-      padding: #{$var};
-  }
+    @each $var in $values {
+        padding: #{$var};
+    }
 }
