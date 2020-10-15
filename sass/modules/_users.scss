@@ -1,7 +1,11 @@
-.user{
-    display: inline-block;
-    padding: 12px;
+.user-section {
+    display: flex;
+}
 
-    
-    .user-name, .user-nickname, .user-role{ margin: 0; padding: 0;}
+.user { 
+    flex: 1;
+    @include addPadding(10px);
+
+    .user-name, .user-nickname, .user-role { margin: 0; }
+
 }

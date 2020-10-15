@@ -2,11 +2,10 @@ footer {
     position: fixed;
     bottom: 0;
     background-color: black;
-
     width: 100%;
-    
-    @include addPadding(10px);
-
     text-align: center;
+    
+    @include addPadding(10px 0);
+
     color: white;
 }
