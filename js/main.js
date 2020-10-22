@@ -1,8 +1,8 @@
 (() => {
     // XHTTP is the old tried-and-true way of doing AJAX - still relevant, but there are better options
     
-     // create a copy of the AJAX object
-    let myReq = new XMLHttpRequest; 
+     // create an instance of the AJAX object
+    let myReq = new XMLHttpRequest;
 
     // add an event handler so that we can track the stages of the request and respond accordingly
     myReq.addEventListener('readystatechange', handleRequest);
@@ -15,10 +15,7 @@
 
     // this is a passive listener function - it gets invoked for every stage of the AJAX request. When the request is done and the data payload is returned from the server it passes that data to the handleDataSet function
     function handleRequest() {
-        debugger;
-
         if (myReq.readyState === XMLHttpRequest.DONE) {
-            debugger;
             // check status here and proceed
             if (myReq.status === 200) {
                 // 200 means done and dusted, ready to go with the dataset!
@@ -30,7 +27,6 @@
                 console.error(`${myReq.status} : something done broke, son`);
             }
         } else {
-            debugger;
             // request isn't ready yet, keep waiting...
             console.log(`Request state: ${myReq.readyState}. Still processing...`);
         }
