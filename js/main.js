@@ -11,7 +11,7 @@
     myReq.open('GET', '../DataSet.json');
     
     // send the request off to the server
-    myReq.send();
+    myReq.send();f
 
     // this is a passive listener function - it gets invoked for every stage of the AJAX request. When the request is done and the data payload is returned from the server it passes that data to the handleDataSet function
     function handleRequest() {
